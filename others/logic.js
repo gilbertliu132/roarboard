@@ -4,9 +4,7 @@ main(); // runs programs
 
 function main() {
     getDate();
-    if (!window.location.pathname.includes("index.html")) { // only run inactivity reset on pages other than the home page
-        inactivityReset();
-    }
+    inactivityReset();
     getColorDayandSchedule();
     document.addEventListener('contextmenu', function(event) { // disables right click
     event.preventDefault();
@@ -31,7 +29,7 @@ function getDate() {
 
 // bring back to home page after some inactivity
 function inactivityReset() {
-    var INACTIVITY_TIME = 5000; // 1 minute 
+    var INACTIVITY_TIME = 60000; // 1 minute 
 
     var inactivityTimer;
 
