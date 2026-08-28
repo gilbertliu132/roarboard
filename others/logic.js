@@ -36,7 +36,7 @@ function inactivityReset() {
     var inactivityTimer;
 
     function goHome() {
-        window.location.href = window.location.origin + "/index.html";
+        window.location.href = window.location.origin + "/roarboard/";
     }
 
     function resetTimer() {
